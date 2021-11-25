@@ -15,16 +15,16 @@ extension UIButton {
     
     func addButtonStyle(border: ButtonStyle) {
         if (border == ButtonStyle.border) {
-            self.setButtonBorder(borderWidth: 1.0, borderColor: UIColor.green.cgColor)
+            self.setButtonBorder(borderWidth: 0.0, borderColor: UIColor.clear.cgColor)
             self.titleLabel?.font = MEDIUM_FONT_SIZE
-            self.backgroundColor = UIColor.white
+            self.backgroundColor = UIColor.clear
             self.setTitleColor(UIColor.darkGray, for: .normal)
         } else {
             self.titleLabel?.font = MEDIUM_BOLD_FONT_SIZE
-            self.backgroundColor = UIColor.green
+            self.backgroundColor = UIColor.clear
             self.setTitleColor(.white, for: .normal)
         }
-        self.layer.cornerRadius = IS_IPAD ? 14 : 14
+        self.layer.cornerRadius = self.frame.height/2
     }
         
     private func setButtonBorder(borderWidth: CGFloat, borderColor: CGColor) {
