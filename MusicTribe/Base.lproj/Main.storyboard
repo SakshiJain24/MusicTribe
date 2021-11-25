@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicTribe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSN-wJ-Ts7">
+                                <rect key="frame" x="0.0" y="150" width="414" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NIY-hD-ETj">
+                                        <rect key="frame" x="0.0" y="10" width="410" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym5-01-cHl">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" buttonSize="large"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBG-gY-GA5">
+                                                <rect key="frame" x="140" y="0.0" width="130" height="130"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" buttonSize="large"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCh-1S-ap4">
+                                                <rect key="frame" x="280" y="0.0" width="130" height="130"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" buttonSize="large"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="410" id="qMf-RT-qW7"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NIY-hD-ETj" firstAttribute="leading" secondItem="WSN-wJ-Ts7" secondAttribute="leading" id="AaH-eu-2Tg"/>
+                                    <constraint firstAttribute="bottom" secondItem="NIY-hD-ETj" secondAttribute="bottom" constant="10" id="JfM-Di-wr5"/>
+                                    <constraint firstItem="NIY-hD-ETj" firstAttribute="top" secondItem="WSN-wJ-Ts7" secondAttribute="top" constant="10" id="rQC-IF-NTj"/>
+                                    <constraint firstAttribute="trailing" secondItem="NIY-hD-ETj" secondAttribute="trailing" constant="4" id="sKZ-eV-mg9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WSN-wJ-Ts7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ahr-1E-dgW"/>
+                            <constraint firstItem="WSN-wJ-Ts7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="ZfI-8w-SQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WSN-wJ-Ts7" secondAttribute="bottom" constant="562" id="cNX-pY-CN8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WSN-wJ-Ts7" secondAttribute="trailing" id="yE3-qp-UcG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="baseview" destination="WSN-wJ-Ts7" id="fYV-ov-jpi"/>
+                        <outlet property="indicatorButtonOne" destination="ym5-01-cHl" id="j9C-9e-er3"/>
+                        <outlet property="indicatorButtonThree" destination="eCh-1S-ap4" id="EWu-4T-zaK"/>
+                        <outlet property="indicatorButtonTwo" destination="wBG-gY-GA5" id="MQe-n5-KbN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259.4202898550725" y="79.6875"/>
+        </scene>
+    </scenes>
+</document>
